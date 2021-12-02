@@ -1,4 +1,4 @@
-package ro.fasttrackit.curs9.homework.Ex2_3;
+package ro.fasttrackit.curs9.homework.ex2_3;
 
 import java.time.LocalDate;
 

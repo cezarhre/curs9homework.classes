@@ -1,10 +1,11 @@
-package ro.fasttrackit.curs9.homework.Ex2_3;
+package ro.fasttrackit.curs9.homework.ex2_3;
 
 public class DatabaseAdmin extends Employee {
-    private String databaseTechnology;
+    protected String databaseTechnology;
 
     public DatabaseAdmin() {
-        this.databaseTechnology = databaseTechnology;
+        super();
+        this.databaseTechnology = "DataBase";
     }
 
     public String getDatabaseTechnology() {

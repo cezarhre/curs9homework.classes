@@ -1,14 +1,16 @@
-package ro.fasttrackit.curs9.homework.Ex2_3;
+package ro.fasttrackit.curs9.homework.ex2_3;
 
 public class Programmer extends Employee{
+
     protected String language;
 
     public Programmer() {
-        this.language = language;
+        super();
+        this.language = "English";
     }
 
     public String getLanguage() {
-        return "English";
+        return language;
     }
 
     @Override

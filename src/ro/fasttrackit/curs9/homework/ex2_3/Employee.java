@@ -20,8 +20,7 @@ public class Employee implements Person {
         this.lName = lName;
         this.birthday = birthday;
         this.address = address;
-    }
-    public Employee(){
+
     }
 
     public LocalDate getDateOfEmployment() {

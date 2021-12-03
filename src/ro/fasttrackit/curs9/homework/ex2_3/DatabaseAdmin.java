@@ -1,10 +1,12 @@
 package ro.fasttrackit.curs9.homework.ex2_3;
 
+import java.time.LocalDate;
+
 public class DatabaseAdmin extends Employee {
     protected String databaseTechnology;
 
     public DatabaseAdmin() {
-        super();
+        super(LocalDate.of(2020,10,1),"Operator","Ionescu","Ion",LocalDate.of(1990,4,3),"Calea 1 Mai");
         this.databaseTechnology = "DataBase";
     }
 

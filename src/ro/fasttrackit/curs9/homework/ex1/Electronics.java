@@ -1,23 +1,26 @@
-package ro.fasttrackit.curs9.homework.Ex1;
+package ro.fasttrackit.curs9.homework.ex1;
 
-public class Electronics extends Product{
-    private String type;
-    private double length;
-    private double width;
-    private double height;
-    private double weight;
+public class Electronics extends Product {
+    protected String type;
+    protected double length;
+    protected double width;
+    protected double height;
+    protected double weight;
 
+    public Electronics(String type, double length, double width, double height, double weight) {
+        super();
+        this.type = type;
+        this.length = length;
+        this.width = width;
+        this.height = height;
+        this.weight = weight;
+    }
     public Electronics(){
-        super.getName();
-        this.type = "TV";
-        this.length = 15.5;
-        this.width = 7.4;
-        this.height = 10.5;
-        this.weight = 14.8;
+
     }
 
     public String getType() {
-        return "Video";
+        return type;
     }
 
     public double getLength() {

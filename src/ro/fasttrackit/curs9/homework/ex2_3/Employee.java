@@ -22,7 +22,6 @@ public class Employee implements Person {
         this.address = address;
 
     }
-
     public LocalDate getDateOfEmployment() {
         return dateOfEmployment;
     }

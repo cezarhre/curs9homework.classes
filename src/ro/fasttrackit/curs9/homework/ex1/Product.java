@@ -1,4 +1,4 @@
-package ro.fasttrackit.curs9.homework.Ex1;
+package ro.fasttrackit.curs9.homework.ex1;
 
 public class Product {
     protected int price;
@@ -14,16 +14,12 @@ public class Product {
 
     }
 
-    public Product() {
-        this.name = "non electronic";
-    }
-
     public int getPrice(){
         return price;
     }
 
     public String getName() {
-        return "Non electronic";
+        return name;
     }
 
     public String getDescription() {

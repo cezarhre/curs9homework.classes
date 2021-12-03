@@ -8,14 +8,14 @@ public class Electronics extends Product {
     protected double weight;
 
     public Electronics(String type, double length, double width, double height, double weight) {
-        super();
+        super(5,"Audio","Surround",10);
         this.type = type;
         this.length = length;
         this.width = width;
         this.height = height;
         this.weight = weight;
-    }
-    public Electronics(){
+        this.name = "TV";
+        this.price = 200;
 
     }
 
@@ -60,5 +60,9 @@ public class Electronics extends Product {
 
     public void setWidth(double width) {
         this.width = width;
+    }
+
+    public String toString(){
+        return "Name "+this.name+" Price "+this.price;
     }
 }

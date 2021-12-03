@@ -11,7 +11,11 @@ public class Product {
         this.name = name;
         this.description = description;
         this.quantity = quantity;
+    }
 
+    public Product(){
+        this.name = "Non electronic";
+        this.price = 100;
     }
 
     public int getPrice(){

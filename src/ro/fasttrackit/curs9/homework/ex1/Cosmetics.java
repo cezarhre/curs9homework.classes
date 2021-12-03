@@ -5,15 +5,13 @@ public class Cosmetics extends Product {
     private int weight;
 
     public Cosmetics(String name, int price, String colour, int weight) {
-        super(10,"Palmolive","For Women",3);
+        super(10, "Palmolive", "For Women", 3);
         this.colour = colour;
         this.weight = weight;
         this.name = "Shower gel";
         this.quantity = 10;
-        this.weight = 50;
 
     }
-
 
     public int getWeight() {
         return weight;
@@ -31,7 +29,7 @@ public class Cosmetics extends Product {
         this.colour = colour;
     }
 
-    public String toString(){
-        return "Name "+this.name+" Quantity "+this.quantity+" Weight "+this.weight+" g";
+    public String toString() {
+        return "Name " + this.name + " Quantity " + this.quantity;
     }
 }

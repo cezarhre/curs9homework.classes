@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Programmer extends Employee{
 
-    protected String language;
+    private String language;
 
     public Programmer() {
         super(LocalDate.of(2019,8,9),"operator","Ionescu","Ion",LocalDate.of(1990,5,11),"B-dul 1 Dec");

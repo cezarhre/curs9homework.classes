@@ -7,16 +7,14 @@ public class Electronics extends Product {
     protected double height;
     protected double weight;
 
-    public Electronics(String type, double length, double width, double height, double weight) {
-        super(5,"Audio","Surround",10);
+    public Electronics(int price, String name, String description, int quantity,
+                       String type, double length, double width, double height, double weight) {
+        super(price, name, description, quantity);
         this.type = type;
         this.length = length;
         this.width = width;
         this.height = height;
         this.weight = weight;
-        this.name = "TV";
-        this.price = 200;
-
     }
 
     public String getType() {
@@ -48,7 +46,7 @@ public class Electronics extends Product {
     }
 
     public double setLength(double length) {
-        if(length > 5 && length < 10){
+        if (length > 5 && length < 10) {
             length = 10;
         }
         return length;
@@ -62,7 +60,7 @@ public class Electronics extends Product {
         this.width = width;
     }
 
-    public String toString(){
-        return "Name "+this.name+" Price "+this.price;
+    public String toString() {
+        return "Name " + this.name + " Price " + this.price;
     }
 }

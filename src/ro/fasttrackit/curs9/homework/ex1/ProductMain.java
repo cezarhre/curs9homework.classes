@@ -4,9 +4,11 @@ public class ProductMain {
     public static void main(String[] args) {
 
         Product product = new Product(100,"Radio","Stereo",10);
-        Cosmetics cosmetics = new Cosmetics("Head",5,"red", 5);
-        Electronics electronics = new Electronics("video",25.10,15.10,6.3,1.5);
-        Fridge fridge =new Fridge(11);
+        Cosmetics cosmetics = new Cosmetics("Head",50,"Grease",10,"red", 250);
+        Electronics electronics = new Electronics(100,"Sony","video",20,"HD",
+                25.10,15.10,6.3,1.5);
+        Fridge fridge =new Fridge(150,"Refrigerator","2 doors",15,7.5,
+                "Frozen",75.25,25.2,250.3,54.2);
 
         System.out.println(cosmetics.getColour());
         System.out.println(cosmetics.toString());

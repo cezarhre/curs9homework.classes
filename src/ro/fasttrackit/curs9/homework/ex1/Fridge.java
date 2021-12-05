@@ -4,8 +4,8 @@ public class Fridge extends Electronics {
     private double temperature;
 
 
-    public Fridge(double temperature) {
-        super("Refrigerator", 110.23, 65.20, 220.32, 51.2);
+    public Fridge(int price, String name, String description, int quantity,double temperature, String type, double length, double width, double height, double weight) {
+        super(price, name, description, quantity, type, length, width, height, weight);
         this.temperature = temperature;
         this.name = "Small refrigerator";
         this.height = 100.25;

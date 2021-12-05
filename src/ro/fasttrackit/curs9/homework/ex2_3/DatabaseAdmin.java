@@ -3,15 +3,16 @@ package ro.fasttrackit.curs9.homework.ex2_3;
 import java.time.LocalDate;
 
 public class DatabaseAdmin extends Employee {
-    private String databaseTechnology;
+    private String dbTechnology;
 
-    public DatabaseAdmin() {
-        super(LocalDate.of(2020,10,1),"Operator","Ionescu","Ion",LocalDate.of(1990,4,3),"Calea 1 Mai");
-        this.databaseTechnology = "DataBase";
+    public DatabaseAdmin(String dbTechnology, LocalDate dateOfEmployment,String position,
+                         String fName, String lName, LocalDate birthday, String address) {
+        super(dateOfEmployment,position,fName,lName,birthday,address);
+        this.dbTechnology = dbTechnology;
     }
 
-    public String getDatabaseTechnology() {
-        return databaseTechnology;
+    public String getDbTechnology() {
+        return dbTechnology;
     }
 
     @Override

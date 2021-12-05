@@ -6,9 +6,10 @@ public class Programmer extends Employee{
 
     private String language;
 
-    public Programmer() {
-        super(LocalDate.of(2019,8,9),"operator","Ionescu","Ion",LocalDate.of(1990,5,11),"B-dul 1 Dec");
-        this.language = "English";
+    public Programmer(String language,LocalDate dateOfEmployment,String position, String fName, String lName,
+                      LocalDate birthday,  String address) {
+        super(dateOfEmployment,position,fName,lName,birthday,address);
+        this.language = language;
     }
 
     public String getLanguage() {

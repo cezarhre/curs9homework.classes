@@ -13,7 +13,8 @@ public class Employee implements Person {
     protected String address;
 
 
-    public Employee(LocalDate dateOfEmployment,String position, String fName, String lName, LocalDate birthday,  String address) {
+    public Employee(LocalDate dateOfEmployment,String position, String fName, String lName,
+                    LocalDate birthday,  String address) {
         this.dateOfEmployment = dateOfEmployment;
         this.position = position;
         this.fName = fName;
@@ -49,4 +50,5 @@ public class Employee implements Person {
     public int getAge(){
         return Period.between(getBirthday(), getDateOfEmployment()).getYears();
     }
+
 }

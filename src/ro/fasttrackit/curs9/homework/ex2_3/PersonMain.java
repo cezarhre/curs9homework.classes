@@ -12,8 +12,7 @@ public class PersonMain {
                 "Oradea");
 
         System.out.println("Full Name "+person.getFirstName()+" "+person.getLastName());
-        System.out.println("Age at Employment "+person.getAge()+" years old");
-        System.out.println("Age "+ Period.between(person.getBirthday(), LocalDate.now()).getYears()+" years old");
+        System.out.println("Age "+ person.getAge()+" years old");
 
         Programmer program = new Programmer("English",LocalDate.of(2019,6,4),
                 "Programmer","Cristescu","Cristi",LocalDate.of(1991,7,3),

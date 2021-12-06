@@ -48,7 +48,7 @@ public class Employee implements Person {
     }
 
     public int getAge(){
-        return Period.between(getBirthday(), getDateOfEmployment()).getYears();
+        return Period.between(getBirthday(), LocalDate.now()).getYears();
     }
 
 }

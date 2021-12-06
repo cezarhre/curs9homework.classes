@@ -5,7 +5,7 @@ import java.time.Period;
 
 public class Employee implements Person {
 
-    protected LocalDate dateOfEmployment;
+    private LocalDate dateOfEmployment;
     protected String position;
     protected String fName;
     protected String lName;

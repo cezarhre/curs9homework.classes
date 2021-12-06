@@ -13,11 +13,6 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public Product(){
-        this.name = "Non electronic";
-        this.price = 100;
-    }
-
     public int getPrice(){
         return price;
     }
